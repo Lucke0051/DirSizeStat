@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.24"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "DirSizeStat::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DirSizeStat-Debug-0885003e75f89c0aff49.json",
+					"jsonFile" : "target-DirSizeStat-Release-f7418ec2d00db0455ac0.json",
 					"name" : "DirSizeStat",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/lukas/Desktop/Repositories/DirSizeStat/cmake-build-debug",
+		"build" : "C:/Users/lukas/Desktop/Repositories/DirSizeStat/cmake-build-release",
 		"source" : "C:/Users/lukas/Desktop/Repositories/DirSizeStat"
 	},
 	"version" : 

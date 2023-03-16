@@ -65,6 +65,7 @@ build CMakeFiles/DirSizeStat.dir/main.cpp.obj: CXX_COMPILER__DirSizeStat_Debug C
 
 build DirSizeStat.exe: CXX_EXECUTABLE_LINKER__DirSizeStat_Debug CMakeFiles/DirSizeStat.dir/main.cpp.obj
   FLAGS = -g
+  LINK_FLAGS = -static
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\DirSizeStat.dir
   POST_BUILD = cd .

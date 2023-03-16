@@ -75,20 +75,36 @@ void clearConsole() {
 
     GetConsoleScreenBufferInfo(console, &screen);
 
-    FillConsoleOutputCharacterA(
-            console, ' ', screen.dwSize.X * screen.dwSize.Y, topLeft, &written
-    );
+    FillConsoleOutputCharacterA(console, ' ', screen.dwSize.X * screen.dwSize.Y, topLeft, &written);
 
-    FillConsoleOutputAttribute(
-            console, FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_BLUE,
-            screen.dwSize.X * screen.dwSize.Y, topLeft, &written
-    );
+    FillConsoleOutputAttribute(console, FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_BLUE,
+                               screen.dwSize.X * screen.dwSize.Y, topLeft, &written);
 
     SetConsoleCursorPosition(console, topLeft);
 }
 
 void drawConsole(DiveData data) {
     cout << "Size: " << fileSizeInUnits(data.size);
+}
+
+void handleInput(short keyCode) {
+    switch (keyCode) {
+        case KEY_UP:
+            cout << endl << "Up" << endl;
+            break;
+        case KEY_DOWN:
+            cout << endl << "Down" << endl;
+            break;
+        case KEY_LEFT:
+            cout << endl << "Left" << endl;
+            break;
+        case KEY_RIGHT:
+            cout << endl << "Right" << endl;
+            break;
+        default:
+            cout << endl << "null" << endl;
+            break;
+    }
 }
 
 int main() {
@@ -103,6 +119,10 @@ int main() {
 
     clearConsole();
     drawConsole(data);
+
+    while (true) {
+        handleInput(getch());
+    }
 
     return 0;
 }
