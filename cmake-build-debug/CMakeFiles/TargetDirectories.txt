@@ -1,0 +1,3 @@
+C:/Users/lukas/Desktop/Repositories/DirSizeStat/cmake-build-debug/CMakeFiles/DirSizeStat.dir
+C:/Users/lukas/Desktop/Repositories/DirSizeStat/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lukas/Desktop/Repositories/DirSizeStat/cmake-build-debug/CMakeFiles/rebuild_cache.dir
